@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thực đơn</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <d iv id="wrapper">
+        <div id="header">
+            <div class="logo">
+                <h1>Food<b>OR</b></h1>
+            </div>
+            <div id="menu">
+                <div class="item">
+                    <a href="trangchu.html">Trang chủ</a>
+                </div>
+                <div class="item">
+                    <a href="menu.html">Thực đơn</a>
+                </div>
+                <div class="item">
+                    <a href="https://www.blogamthuc.com/" target="_blank">Blog</a>
+                </div>
+                <div class="item">
+                    <a href="https://www.facebook.com/profile.php?id=100008558594770" target="_blank">Liên hệ</a>
+                </div>
+            </div>
+            <!-- Giỏ hàng ở đây -->
+            <div id="actions">
+                <!-- <div class="item">
+                    <i class="fa-solid fa-bag-shopping" id="giohang"></i> -->
+                    <!-- <img src="https://static.vecteezy.com/system/resources/previews/019/787/018/original/shopping-cart-icon-shopping-basket-on-transparent-background-free-png.png" alt=""> -->
+                <!-- </div> -->
+                <div class="item">
+                    <i class="fa-solid fa-bag-shopping" id="giohang"></i>
+                    <span class="soluong">0</span>
+                </div>
+                <div class="card">
+                    <h1>Giỏ hàng</h1>
+                    <ul class="listCard"></ul>
+                    <div class="checkOut">
+                        <div class="total">0</div>
+                        <div class="closeCard">Close</div>
+                    </div>
+                </div>
+            </div>
+           <!-- <div class="list"></div> -->
+
+            <div id="actions">
+                <div class="item">
+                    <a href="" id="logoutLink">Đăng xuất</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="wp-products">
+            <h2>MENU</h2>
+            <ul id="list-products">
+                <div class="item">
+                    <a href="" class="item_image">
+                        <img src="https://th.bing.com/th/id/OIP.k1W0hbC7l3amZauTWzwptwHaFE?w=268&h=183&c=7&r=0&o=5&dpr=1.1&pid=1.7"
+                            alt="">
+                    </a>
+                    <div class="name">Sushi</div>
+                    <div class="desc">Món ăn Nhật Bản</div>
+                    <div class="price">150.000 VNĐ</div>
+                    <button class="button-Order">Order</button>
+                    <i class="fa-solid fa-bag-shopping-plus" id="giohang"></i>
+                </div>
+
+                <div class="item">
+                    <a href="" class="item_image">
+                        <img src=" https://th.bing.com/th/id/OIP.AJy7Qq0B21LN4Apoj01erAHaEK?w=293&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7"
+                            alt="">
+                    </a>
+                    <div class="name">Salad</div>
+                    <div class="desc">Món ăn ít dầu mỡ</div>
+                    <div class="price">50.000 VNĐ</div>
+                    <button class="button-Order">Order</button>
+                </div>
+
+                <div class="item">
+                    <a href="" class="item_image">
+                        <img src="https://th.bing.com/th/id/OIP.nCr0pK2PwWDqVvMxhllkAAHaEJ?w=321&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7"
+                            alt="">
+                    </a>
+                    <div class="name">Hamburger</div>
+                    <div class="desc">Đồ ăn nhanh</div>
+                    <div class="price">25.000 VNĐ</div>
+                    <button class="button-Order">Order</button>
+                </div>
+
+                <div class="item">
+                    <a href="" class="item_image">
+                        <img src="https://thamhiemmekong.com/wp-content/uploads/2020/07/amthucdongthap1.jpg" alt="">
+                    </a>
+                    <div class="name">Gỏi tôm</div>
+                    <div class="desc">Món ăn Việt Nam</div>
+                    <div class="price">150.000 VNĐ</div>
+                    <button class="button-Order">Order</button>
+                </div>
+
+                <div class="item">
+                    <a href="" class="item_image">
+                        <img src="https://th.bing.com/th/id/OIP.yUJ4wR7DGG4Huq9BzzAj7QHaEK?w=243&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7"
+                            alt="">
+                    </a>
+                    <div class="name">Cháo gà</div>
+                    <div class="desc">Món ăn Việt Nam</div>
+                    <div class="price">30.000 VNĐ</div>
+                    <button class="button-Order">Order</button>
+                </div>
+
+                <div class="item">
+                    <a href="" class="item_image">
+                        <img src="https://th.bing.com/th/id/OIP.U-i3a7_agCvDAqOh2I1RkgHaEo?w=271&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7"
+                            alt="">
+                    </a>
+                    <div class="name">Bánh tráng cuốn thịt heo</div>
+                    <div class="desc">Món ăn Việt Nam</div>
+                    <div class="price">45.000 VNĐ</div>
+                    <button class="button-Order">Order</button>
+                </div>
+
+                <div class="item">
+                    <a href="" class="item_image">
+                        <img src="https://th.bing.com/th/id/OIP.O1JaoEsRHdllIb4cAp1OfwHaEG?w=303&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7"
+                            alt="">
+                    </a>
+                    <div class="name">Bò Bittet</div>
+                    <div class="desc">Món ăn Mỹ</div>
+                    <div class="price">300.000 VNĐ</div>
+                    <button class="button-Order">Order</button>
+                </div>
+                <div class="item">
+                    <a href="" class="item_image">
+                        <img src="https://thoidai.com.vn/stores/news_dataimages/nguyen.yen/052020/22/16/3436_Pho.jpg"
+                            alt="">
+                    </a>
+                    <div class="name">Phở Bò</div>
+                    <div class="desc">Món ăn Việt Nam</div>
+                    <div class="price">20.000 VNĐ</div>
+                    <button class="button-Order">Order</button>
+                </div>
+
+                <div class="item">
+                    <a href="" class="item_image">
+                        <img src="https://th.bing.com/th/id/OIP.9-3lXWBymaley9py9E_tbgHaE8?w=258&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7"
+                            alt="">
+                    </a>
+                    <div class="name">Sashimi</div>
+                    <div class="desc">Món ăn Nhật Bản</div>
+                    <div class="price">100.000 VNĐ</div>
+                    <button class="button-Order">Order</button>
+                </div>
+
+                <div class="item">
+                    <a href="" class="item_image">
+                        <img src="https://cdn.tgdd.vn/2021/04/CookProduct/6609B39A-DBA6-44BD-8600-B93695D55113-DieuniHo(2)-1200x676.jpeg"
+                            alt="">
+                    </a>
+                    <div class="name">Kimbap</div>
+                    <div class="desc">Món ăn Hàn Quốc</div>
+                    <div class="price">50.000 VNĐ</div>
+                    <button class="button-Order">Order</button>
+                </div>
+
+                <div class="item">
+                    <a href="" class="item_image">
+                        <img src="https://th.bing.com/th/id/OIP.VKSs5fgI5h1wrVTRs1KLdgHaE8?w=284&h=189&c=7&r=0&o=5&dpr=1.1&pid=1.7"
+                            alt="">
+                    </a>
+                    <div class="name">Pizza</div>
+                    <div class="desc">Đồ ăn nhanh</div>
+                    <div class="price">100.000 VNĐ</div>
+                    <button class="button-Order">Order</button>
+                </div>
+
+                <div class="item">
+                    <a href="" class="item_image">
+                        <img src="https://th.bing.com/th/id/OIP.2m9lbs0oK1Hxq6G4H9jtsgHaFa?w=246&h=180&c=7&r=0&o=5&dpr=1.1&pid=1.7"
+                            alt="">
+                    </a>
+                    <div class="name">Gà KFC</div>
+                    <div class="desc">Đồ ăn nhanh</div>
+                    <div class="price">99.000 VNĐ</div>
+                    <button class="button-Order">Order</button>
+                </div>
+            </ul>
+        </div>
+        <!-- <div id="header">
+        <div id="wrapper">
+        <div id="header">        
+            <div id="menu">
+                <div class="item">
+                    <a href="">Trang chủ</a>
+                </div>
+                <div class="item">
+                    <a href="">Thực đơn</a>
+                </div>
+                <div class="item">
+                    <a href="">Blog</a>
+                </div>
+                <div class="item">
+                    <a href="">Liên hệ</a>
+                </div>
+            </div>
+         </div>
+        </div>
+    </div> -->
+        <!-- <section>
+        <nav>
+            <div class="logo">
+                <h1>Food<b>OR</b></h1>
+            </div>
+
+            <ul>
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#thucdon">Thực đơn</a></li>
+                <li><a href="#blog">Blob</a></li>
+                <li><a href="#lienhe">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </section> -->
+        <!-- 
+    
+
+    <div class="thucdon" id="Thucdon">
+        <h1>Our<span>Menu</span></h1> 
+        <div class="thucdon-box">
+            <div class="thucdon-card">
+                <div class="thucdon-image">
+                    <img src="https://th.bing.com/th/id/OIP.vJHhUtfOv00EnAhx9VHpXgHaGJ?pid=ImgDet&w=206&h=170&c=7&dpr=1.1" alt="Burger">
+                </div>
+                <div class="small-card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="thucdon-info">
+                    <h2>Burger</h2>
+                    <h3>$20.000</h3>
+                    <div class="thucdon-icon">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="#" class="thucdon-btn">Đặt món</a>
+                </div>
+            </div>
+
+
+            <div class="thucdon-card">
+                <div class="thucdon-image">
+                    <img src="https://th.bing.com/th/id/OIP.vJHhUtfOv00EnAhx9VHpXgHaGJ?pid=ImgDet&w=206&h=170&c=7&dpr=1.1" alt="Burger">
+                </div>
+                <div class="small-card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="thucdon-info">
+                    <h2>Burger</h2>
+                    <h3>$20.000</h3>
+                    <div class="thucdon-icon">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="#" class="thucdon-btn">Đặt món</a>
+                </div>
+            </div>
+
+            <div class="thucdon-card">
+                <div class="thucdon-image">
+                    <img src="https://th.bing.com/th/id/OIP.vJHhUtfOv00EnAhx9VHpXgHaGJ?pid=ImgDet&w=206&h=170&c=7&dpr=1.1" alt="Burger">
+                </div>
+                <div class="small-card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="thucdon-info">
+                    <h2>Burger</h2>
+                    <h3>$20.000</h3>
+                    <div class="thucdon-icon">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="#" class="thucdon-btn">Đặt món</a>
+                </div>
+            </div>
+
+            <div class="thucdon-card">
+                <div class="thucdon-image">
+                    <img src="https://th.bing.com/th/id/OIP.vJHhUtfOv00EnAhx9VHpXgHaGJ?pid=ImgDet&w=206&h=170&c=7&dpr=1.1" alt="Burger">
+                </div>
+                <div class="small-card">
+                    <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="thucdon-info">
+                    <h2>Burger</h2>
+                    <h3>$20.000</h3>
+                    <div class="thucdon-icon">
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-heart"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <a href="#" class="thucdon-btn">Đặt món</a>
+                </div>
+            </div>
+
+            
+
+            
+        </div>
+    </div> -->
+
+
+        <script src="script.js"></script>
+</body>
+
+</html>
